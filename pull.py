@@ -20,14 +20,13 @@ class Song:
     url: str
 
     def download(self, path: str, replace: bool = False):
-        extension: str = "flac" if self.source == Source.YOUTUBE else "mp3"
-        exists: bool = os.path.exists(f"{path}/{self.title}.{extension}")
+        exists: bool = os.path.exists(f"{path}/{self.title}.flac")
 
         if exists and not replace:
             return
 
         elif exists and replace:
-            os.remove(f"{path}/{self.title}.{extension}")
+            os.remove(f"{path}/{self.title}.flac")
 
         if self.source == Source.YOUTUBE:
             subprocess.run(
@@ -54,7 +53,16 @@ class Song:
                     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
                 },
             )
-            open(f"{path}/{self.title}.mp3", "wb").write(response.content)
+
+            filename: str = f"{path}/{self.title}.flac"
+
+            if not os.path.exists("ext"):
+                os.mkdir("ext")
+
+            open(f"ext/{self.title}.tar", "wb").write(response.content)
+            subprocess.run(["unzip", f"ext/{self.title}.tar", "-d", "ext"])
+            subprocess.run(["ffmpeg", "-i", "ext/audio.mp3", filename])
+            subprocess.run(["rm", "-r", "ext"])
 
 
 @dataclass
