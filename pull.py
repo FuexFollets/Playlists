@@ -200,8 +200,8 @@ songs = [
     ),
     Song(
         "Trial & Error - Tokoyami no Keiyaku - SHOUJO",
-        Source.YOUTUBE,
-        "https://www.youtube.com/watch?v=dJpCLVezuYw",
+        Source.OSU,
+        "https://assets.ppy.sh/artists/20/Songs/Trial%20%26%20Error%20-%20Tokoyami%20no%20Keiyaku%20KEGARETA-SHOUJO%20feat.%20GUMI.osz",
     ),
     Song(
         "Kinoko Teikoku - Whirlpool",
@@ -213,6 +213,8 @@ songs = [
         Source.YOUTUBE,
         "https://www.youtube.com/watch?v=HEsX1FeZ25Y",
     ),
+
+
 ]
 
 playlist = Playlist("Favorites", "Favorites", songs)
