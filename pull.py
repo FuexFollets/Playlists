@@ -178,8 +178,8 @@ songs = [
     ),
     Song(
         "Innocent Key - Lunatic Red Eyes",
-        Source.YOUTUBE,
-        "https://www.youtube.com/watch?v=z6xkMvhymlk",
+        Source.OSU,
+        "https://assets.ppy.sh/artists/323/Touhou%20Tower%20Orchid/Innocent%20Key%20-%20Lunatic%20Red%20Eyes.osz",
     ),
     Song(
         "Maduk ft. Veela - Ghost Assassin",
