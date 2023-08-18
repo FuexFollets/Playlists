@@ -19,7 +19,16 @@ class Song:
     source: Source
     url: str
 
-    def download(self, path: str):
+    def download(self, path: str, replace: bool = False):
+        extension: str = "flac" if self.source == Source.YOUTUBE else "mp3"
+        exists: bool = os.path.exists(f"{path}/{self.title}.{extension}")
+
+        if exists and not replace:
+            return
+
+        elif exists and replace:
+            os.remove(f"{path}/{self.title}.{extension}")
+
         if self.source == Source.YOUTUBE:
             subprocess.run(
                 [
@@ -54,12 +63,12 @@ class Playlist:
     directory_name: str
     songs: list[Song]
 
-    def download(self):
+    def download(self, replace: bool = False):
         if not os.path.exists(self.directory_name):
             os.mkdir(self.directory_name)
 
         for song in self.songs:
-            song.download(self.directory_name)
+            song.download(self.directory_name, replace)
 
 
 songs = [
@@ -206,7 +215,7 @@ songs = [
     ),
 ]
 
-playlist = Playlist("Favorites", "Favorites-new", songs)
+playlist = Playlist("Favorites", "Favorites", songs)
 
 
 def main():
