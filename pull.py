@@ -221,8 +221,66 @@ songs = [
         Source.YOUTUBE,
         "https://www.youtube.com/watch?v=HEsX1FeZ25Y",
     ),
-
-
+    Song(
+        "T.a.t.u. - All The Things She Said",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=ujpvNvSgcic",
+    ),
+    Song(
+        "Aiobahn & Yunomi - Ginga Tetsudou no Penguin",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=8oUnO8H6x1s",
+    ),
+    Song(
+        "Cartoon - Whatever I do (feat. Kostja)",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=6CbaTLNBTjM",
+    ),
+    Song(
+        "S3RL - Well, That Was Awkward",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=xnDeddWiUaw",
+    ),
+    Song(
+        "Dustcell - Dero",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=iFKXsCZGV8A",
+    ),
+    Song(
+        "Yooh - Ice Angel",
+        Source.YOUTUBE,
+        "https://assets.ppy.sh/artists/218/Yoohsics%20-REVIVAL-/Yooh%20-%20Ice%20Angel.osz",
+    ),
+    Song(
+        "Ice Nine Kills - Merry Axe-Mas",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=P6bivDelhWc"
+    ),
+    Song(
+        "Dreamcatcher - You And I",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=I5_BQAtwHws",
+    ),
+    Song(
+        "Katarzyna Bogusz, Ola Maciejewska, Przemysław Kleczkowski - Blogoslawieni Miłosierni",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=ETrhmFC_1TA",
+    ),
+    Song(
+        "Sarah Connor - Cold As Ice Remix",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=E3yGF9PFetQ",
+    ),
+    Song(
+        "Wanima - Gong",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=nJceYEtgBsc",
+    ),
+    Song(
+        "Epica - Victims of Contingency",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=i7IIYIFljZM",
+    ),
 ]
 
 playlist = Playlist("Favorites", "Favorites", songs)
