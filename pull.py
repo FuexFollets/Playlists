@@ -281,6 +281,11 @@ songs = [
         Source.YOUTUBE,
         "https://www.youtube.com/watch?v=i7IIYIFljZM",
     ),
+    Song(
+        "Waterflame - Thunderzone v2",
+        Source.YOUTUBE,
+        "https://www.youtube.com/watch?v=oIu1o536GmI",
+    ),
 ]
 
 playlist = Playlist("Favorites", "Favorites", songs)
