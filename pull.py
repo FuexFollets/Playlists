@@ -248,7 +248,7 @@ songs = [
     ),
     Song(
         "Yooh - Ice Angel",
-        Source.YOUTUBE,
+        Source.OSU,
         "https://assets.ppy.sh/artists/218/Yoohsics%20-REVIVAL-/Yooh%20-%20Ice%20Angel.osz",
     ),
     Song(
@@ -262,7 +262,7 @@ songs = [
         "https://www.youtube.com/watch?v=I5_BQAtwHws",
     ),
     Song(
-        "Katarzyna Bogusz, Ola Maciejewska, Przemysław Kleczkowski - Blogoslawieni Miłosierni",
+        "Katarzyna Bogusz, Ola Maciejewska, Przemyslaw Kleczkowski - Blogoslawieni Milosierni",
         Source.YOUTUBE,
         "https://www.youtube.com/watch?v=ETrhmFC_1TA",
     ),
