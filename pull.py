@@ -119,7 +119,7 @@ songs = [
         "https://www.youtube.com/watch?v=f2bV87F9zrM",
     ),
     Song(
-        'Masahiro "Godspeed" Aoki - Frostbite',
+        "Masahiro Godspeed Aoki - Frostbite",
         Source.YOUTUBE,
         "https://www.youtube.com/watch?v=GW7jTcfbDd4",
     ),
@@ -254,7 +254,7 @@ songs = [
     Song(
         "Ice Nine Kills - Merry Axe-Mas",
         Source.YOUTUBE,
-        "https://www.youtube.com/watch?v=P6bivDelhWc"
+        "https://www.youtube.com/watch?v=P6bivDelhWc",
     ),
     Song(
         "Dreamcatcher - You And I",
