@@ -8,6 +8,3 @@ Some of my music
         <source src="Favorites/An feat - Amrita.flac">
     </audio>
 </div>
-
-<script>
-</script>
